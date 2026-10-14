@@ -20,15 +20,15 @@ jobs:
 
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
-        working-directory: shulker-preview
+        working-directory: shulker-preview/shulker-preview
 
       - name: Build mod
         run: ./gradlew build --no-daemon
-        working-directory: shulker-preview
+        working-directory: shulker-preview/shulker-preview
 
       - name: Upload mod JAR
         uses: actions/upload-artifact@v4
         with:
           name: Shulker-Preview-Mod
-          path: shulker-preview/build/libs/*.jar
+          path: shulker-preview/shulker-preview/build/libs/*.jar
           if-no-files-found: error
