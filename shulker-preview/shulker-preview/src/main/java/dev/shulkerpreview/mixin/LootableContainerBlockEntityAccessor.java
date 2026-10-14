@@ -12,3 +12,4 @@ public interface LootableContainerBlockEntityAccessor {
     @Invoker("getInvStackList")
     DefaultedList<ItemStack> shulkerpreview$getInvStackList();
 }
+
