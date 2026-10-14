@@ -11,3 +11,4 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 public interface LootableContainerBlockEntityAccessor {
     @Invoker("heldStacks")
     DefaultedList<ItemStack> shulkerpreview$getHeldStacks();
+}
