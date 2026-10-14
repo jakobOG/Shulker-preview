@@ -9,6 +9,6 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 /** Liest die Item-Liste direkt, ohne dass Loot-Tabellen generiert werden (keine Weltveränderung). */
 @Mixin(LootableContainerBlockEntity.class)
 public interface LootableContainerBlockEntityAccessor {
-    @Invoker("method_11282")
+    @Invoker("getHeldStacks")
     DefaultedList<ItemStack> shulkerpreview$getInvStackList();
 }
